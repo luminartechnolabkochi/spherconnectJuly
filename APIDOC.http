@@ -1,0 +1,40 @@
+#api for creating a user account
+
+###
+
+POST  http://127.0.0.1:8000/api/signup/
+Content-Type: application/json
+
+{
+    "username":"java",
+    "email":"java@gmail.com",
+    "password":"Password@123"
+}
+
+
+
+#Api for getting token
+###
+
+POST  http://127.0.0.1:8000/api/token/ 
+Content-Type: application/json
+
+{
+    "username":"django",
+    "password":"Password@123"
+}
+
+# api for updating user profile
+
+###
+
+PUT http://127.0.0.1:8000/api/profile/
+Content-Type: application/json
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
+{
+    "adress":"address line 1",
+    "bio":"djboss",
+    "phone":"986563673"
+    
+}
