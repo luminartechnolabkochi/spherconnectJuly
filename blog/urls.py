@@ -12,6 +12,8 @@ urlpatterns=[
     path("token/",ObtainAuthToken.as_view()),
 
     path("profile/",views.ProfileUpdateView.as_view()),
-    
+
+    path("user/",views.UserDetailView.as_view()),
+
     
 ]

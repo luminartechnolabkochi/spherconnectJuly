@@ -38,3 +38,17 @@ Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
     "phone":"986563673"
     
 }
+
+
+# api for fetching user profile detail
+###
+
+GET http://127.0.0.1:8000/api/profile/
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
+#api for getting user detail
+
+###
+
+GET http://127.0.0.1:8000/api/user/
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
