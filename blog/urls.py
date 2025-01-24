@@ -15,5 +15,10 @@ urlpatterns=[
 
     path("user/",views.UserDetailView.as_view()),
 
+    path("posts/",views.PostListCreateView.as_view()),
+
+    path("posts/<int:pk>/",views.PostRetrieveUpdateDestroyView.as_view()),
+    
+
     
 ]

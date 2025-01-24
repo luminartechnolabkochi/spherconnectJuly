@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 from rest_framework import serializers
 
-from blog.models import Profile
+from blog.models import Profile,Post
 
 from django.utils import timezone
 
@@ -51,3 +51,17 @@ class ProfileSerializer(serializers.ModelSerializer):
     def get_greetings(self,obj):
 
         return "Good afternoon"
+
+
+class PostSerializer(serializers.ModelSerializer):
+
+    owner=serializers.StringRelatedField(read_only=True)
+
+    class Meta:
+
+        model=Post
+        
+        fields="__all__"
+        
+        read_only_fields=["id","owner","created_at","updated_at"]
+

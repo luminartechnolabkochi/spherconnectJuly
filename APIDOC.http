@@ -52,3 +52,31 @@ Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
 
 GET http://127.0.0.1:8000/api/user/
 Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
+
+#======= Posts=====
+
+# Api for adding a new post
+
+###
+
+POST http://127.0.0.1:8000/api/posts/
+Content-Type: application/json
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
+{
+    "caption":"good morning"
+
+}
+
+###
+# api call for listing all posts
+GET http://127.0.0.1:8000/api/posts/
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
+###
+# api cal for fetching specific post details
+
+GET http://127.0.0.1:8000/api/posts/1/
+Authorization: Token 60d5470b2e83788cd2122c2338311f3f1172d2c6
+
